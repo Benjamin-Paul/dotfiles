@@ -1,0 +1,9 @@
+# ls
+alias la="lsd -lh"
+alias ll="lsd -lah"
+alias ls="lsd"
+alias cls="clear"
+
+# File manipulation
+alias copy="xclip -selection c"
+alias bat="batcat"
