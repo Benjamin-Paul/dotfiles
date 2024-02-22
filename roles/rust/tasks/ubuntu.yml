@@ -1,10 +1,5 @@
 ---
-- name: Rust | Install packages
-  ansible.builtin.apt:
-    name: "{{ item }}"
-    state: present
-    update_cache: true
-  become: true
-  loop:
-    - rustc
-    - cargo
+- name: Rust | Check if .cargo dir is already present
+  ansible.builtin.debug:
+    msg: ansible_env.HOME
+

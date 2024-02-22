@@ -1,4 +1,10 @@
 ---
-- name: Run Ubuntu Tasks
-  ansible.builtin.import_tasks: ubuntu.yml
-  when: ansible_os_family == 'Debian'
+- name: Rust | Install packages
+  ansible.builtin.apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: true
+  become: true
+  loop:
+    - rustc
+    - cargo

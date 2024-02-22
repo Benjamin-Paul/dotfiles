@@ -1,3 +1,0 @@
-# Kubernetes
-alias kube="kubectl"
-alias kubeswitch="kube config set-context $(kube config current-context) --namespace"

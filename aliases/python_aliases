@@ -1,3 +1,0 @@
-# Python
-alias venv="source ./.venv/bin/activate"
-alias py="python3"

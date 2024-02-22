@@ -1,2 +1,5 @@
 vault-password.txt
 /callback_plugins/__pycache__
+
+.dotfiles_ran
+.dotfiles.log

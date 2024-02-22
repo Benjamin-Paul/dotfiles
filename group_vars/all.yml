@@ -1,34 +1,36 @@
 default_roles:
   - system
-  # - 1password
-  # - alacritty
-  - asciiquarium
+  - 1password
   - bash
   - bat
   - docker
   - fonts
   - fzf
   - git
-  - go
   - helm
   # - k8s # This is removed until a better kube config mgmt solution is found
-  - k9s
   - lua
-  - nala
   - neovim
-  - npm
-  - pwsh
   - python
-  - ruby
   - rust
   - ssh
-  - sshfs
-  - terraform
-  - tmate
   - tmux
-  - zellij
-  # - spotify
-  - zoxide
+
+exclude_roles: 
+  - system
+  - 1password
+  - bash
+  - bat
+  - docker
+  - fonts
+  - fzf
+  - git
+  - helm
+  - lua
+  - neovim
+  - python
+  - ssh
+  - tmux
 
 git_user_name: "TechDufus"
 git_user_email: !vault |
